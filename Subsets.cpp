@@ -7,9 +7,9 @@ void solve(string n,string curr="",int i=0)
 		cout<<curr<<endl;
 		return;
 	}
-	
-	solve(n,curr,i+1);
 	solve(n,curr+n[i],i+1);
+	solve(n,curr,i+1);
+	
 }
 int main()
 {
